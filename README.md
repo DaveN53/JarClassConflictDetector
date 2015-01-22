@@ -1,5 +1,5 @@
 # JarClassConflictDetector
-Maven plugin for searching through jar file directories and finding conflicting classes among them. 
+Maven plugin for searching through .jar file directories, finding conflicting classes among them and reporting what was found. 
 
 ##Generated Report:
 - **Duplicate-jars**:Full report of any conflicting classes found in the processed .jar files. Includes found conflicts, ignored conflicts, and list of processed jars.
