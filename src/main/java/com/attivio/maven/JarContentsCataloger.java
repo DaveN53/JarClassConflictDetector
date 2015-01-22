@@ -21,7 +21,7 @@ public class JarContentsCataloger extends AbstractMojo{
 	/**
 	 * @parameter
 	 */
-	private String pathDir = "";
+	private String pathDir = System.getProperty("user.dir");
 	/**
 	 * @parameter
 	 */

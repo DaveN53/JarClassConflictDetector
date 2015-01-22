@@ -37,7 +37,7 @@ public class ClassConflictDetectorTest extends TestCase {
         is.setIgnores(ignoreList);
         try 
         {
-        	conflictDetector.setPathDir("C:/unscanned/devsetup/trunk/tools/class-conflict-detector/testJars/testJars");
+        	//conflictDetector.setPathDir("C:/unscanned/devsetup/trunk/tools/class-conflict-detector/testJars/testJars");
         	conflictDetector.addIgnores(is);
         	conflictDetector.setReport("build\\report\\");
 			conflictDetector.execute();
