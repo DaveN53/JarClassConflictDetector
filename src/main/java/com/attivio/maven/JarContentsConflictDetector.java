@@ -32,6 +32,10 @@ public class JarContentsConflictDetector extends AbstractMojo{
 	/**
 	 * @parameter
 	 */
+	private String JarCatalogDir = "";
+	/**
+	 * @parameter
+	 */
 	private String reportDir = "build\\report\\";
 	/**
 	 * @parameter
@@ -76,13 +80,13 @@ public class JarContentsConflictDetector extends AbstractMojo{
 	{
 		XmlDeserializer deserializer = new XmlDeserializer();
 		ClassMapAggregator aggregator = new ClassMapAggregator();
-		theClasses = deserializer.DeserializeXmlToClassMap("build/report/JarCatalog.xml");
+		theClasses = deserializer.DeserializeXmlToClassMap(reportDir + "JarCatalog.xml");
 
-		String trunkClassCatalogPath = getTrunkJarCatalogPath();
-		if (trunkClassCatalogPath != null)
+		if (JarCatalogDir.equals("")) JarCatalogDir = getTrunkJarCatalogPath();
+		if (JarCatalogDir != null)
 		{	
 			getLog().info("Retrieving Trunk Class Catalog");
-			DupJarClassMap entireTrunkClassCatalog = deserializer.DeserializeXmlToClassMap(trunkClassCatalogPath);
+			DupJarClassMap entireTrunkClassCatalog = deserializer.DeserializeXmlToClassMap(JarCatalogDir  + "JarCatalog.xml");
 			theClasses = aggregator.AggregateDupJarClassMap(theClasses, entireTrunkClassCatalog);
 		}
 	}
@@ -97,7 +101,7 @@ public class JarContentsConflictDetector extends AbstractMojo{
 			{
 				folder = folder.getParentFile();
 			}
-			return folder.getAbsolutePath() + "\\" + reportDir + "JarCatalog.xml";
+			return folder.getAbsolutePath() + "\\" + reportDir;
 		}
 		else return null;
 	}
