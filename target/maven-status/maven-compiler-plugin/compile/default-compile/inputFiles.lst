@@ -1,0 +1,14 @@
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\Ignore.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\JarInfo.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\XmlDeserializer.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\Ignores.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\ClassConflictDetector.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\JarClassConflictReporter.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\XmlSerializer.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\ClassMapAggregator.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\DupJarClassMap.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\JarReference.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\JarContentsCataloger.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\DupJarClassDefinition.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\JarContentsConflictDetector.java
+C:\unscanned\devsetup\trunk\tools\class-conflict-detector\src\main\java\com\attivio\maven\util\JarDirectoryProcessor.java
