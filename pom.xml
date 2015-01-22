@@ -39,7 +39,8 @@
   				<reportDir></reportDir>
   				<failOnDuplicate>true</failOnDuplicate>
   				<pathDir>testJars/testJars</pathDir>
-  				<JarCatalogDir></JarCatalogDir>
+  				<jarCatalogDir></jarCatalogDir>
+  				<kitPath></kitPath>
   				<ignores>
   					<ignores>
   						<ignore>

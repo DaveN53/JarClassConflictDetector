@@ -36,7 +36,7 @@ public class ClassConflictDetector extends AbstractMojo
 	/**
 	 * @parameter
 	 */
-	private String JarCatalogDir = "";
+	private String jarCatalogDir = "";
 	/**
 	 * @parameter
 	 */
@@ -105,11 +105,11 @@ public class ClassConflictDetector extends AbstractMojo
 		XmlDeserializer deserializer = new XmlDeserializer();
 		ClassMapAggregator aggregator = new ClassMapAggregator();
 
-		if (JarCatalogDir.equals("")) JarCatalogDir = getTrunkJarCatalogPath();
-		if (JarCatalogDir != null && new File(JarCatalogDir).exists())
+		if (jarCatalogDir.equals("")) jarCatalogDir = getTrunkJarCatalogPath();
+		if (jarCatalogDir != null && new File(jarCatalogDir).exists())
 		{	
 			getLog().info("Retrieving Trunk Class Catalog");
-			DupJarClassMap entireTrunkClassCatalog = deserializer.DeserializeXmlToClassMap(JarCatalogDir + "JarCatalog.xml");
+			DupJarClassMap entireTrunkClassCatalog = deserializer.DeserializeXmlToClassMap(jarCatalogDir + "JarCatalog.xml");
 			theClasses = aggregator.AggregateDupJarClassMap(theClasses, entireTrunkClassCatalog);
 		}
 	}
