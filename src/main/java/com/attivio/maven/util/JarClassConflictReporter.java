@@ -229,6 +229,7 @@ public class JarClassConflictReporter {
 		
 		Element sortByClass = cDiv.addElement("div");
 		sortByClass.addAttribute("Id", "sortByClass");
+		sortByClass.addAttribute("style", "display:none;");
 		Element sortByJar = cDiv.addElement("div");
 		sortByJar.addAttribute("style", "display:block;");
 		sortByJar.addAttribute("Id", "sortByJar");

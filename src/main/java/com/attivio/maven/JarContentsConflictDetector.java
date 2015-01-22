@@ -108,7 +108,7 @@ public class JarContentsConflictDetector extends AbstractMojo{
 		FileOutputStream out = null;
 		try 
 		{
-			out = new FileOutputStream(reportDir + "jar-content.html");
+			out = new FileOutputStream(reportDir + "ClassConflictReport.html");
 			dupes = reporter.dumpHtml(out, theClasses);
 		} 
 		catch (IOException e) 	

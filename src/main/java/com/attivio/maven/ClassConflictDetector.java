@@ -141,11 +141,11 @@ public class ClassConflictDetector extends AbstractMojo
 		FileOutputStream out = null;
 		try 
 		{
-			File outputFile = new File(reportDir + "duplicate-jars.html");
+			File outputFile = new File(reportDir + "ClassConflictReport.html");
 			if(!outputFile.exists())		
 				outputFile.getParentFile().mkdirs();
 				
-			out = new FileOutputStream(reportDir + "duplicate-jars.html");
+			out = new FileOutputStream(reportDir + "ClassConflictReport.html");
 			dupes = reporter.dumpHtml(out, theClasses);
 		} 
 		catch (IOException e) 	
