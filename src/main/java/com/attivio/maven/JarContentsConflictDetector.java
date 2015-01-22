@@ -53,7 +53,6 @@ public class JarContentsConflictDetector extends AbstractMojo{
 	{	
 		validateParameters();
 		
-		
 		for(Ignore ign: ignores.getIgnores())
 			reporter.getIgnores().add(ign);
 	
